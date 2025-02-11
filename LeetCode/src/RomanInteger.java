@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.Stack;
+import java.util.TreeSet;
 
 public class RomanInteger {public class InteiroParaRomano {
     public static String intParaRomano(int num) {
@@ -17,20 +19,20 @@ public class RomanInteger {public class InteiroParaRomano {
         }
 
         return romano.toString();
+        }
     }
+    public static void main (String[] args) {
+    // Testando com exemplos fornecidos
+        System.out.println(RomanInteger.InteiroParaRomano.intParaRomano(2));    // Saída: II
+        System.out.println(RomanInteger.InteiroParaRomano.intParaRomano(12));   // Saída: XII
+        System.out.println(RomanInteger.InteiroParaRomano.intParaRomano(27));   // Saída: XXVII
 
-    public static void main(String[] args) {
-        // Testando com exemplos fornecidos
-        System.out.println(intParaRomano(2));    // Saída: II
-        System.out.println(intParaRomano(12));   // Saída: XII
-        System.out.println(intParaRomano(27));   // Saída: XXVII
-
-        // Testes adicionais
-        System.out.println(intParaRomano(4));    // Saída: IV
-        System.out.println(intParaRomano(9));    // Saída: IX
-        System.out.println(intParaRomano(58));   // Saída: LVIII
-        System.out.println(intParaRomano(1994)); // Saída: MCMXCIV
-    }
+    // Testes adicionais
+        System.out.println(RomanInteger.InteiroParaRomano.intParaRomano(4));    // Saída: IV
+        System.out.println(RomanInteger.InteiroParaRomano.intParaRomano(9));    // Saída: IX
+        System.out.println(RomanInteger.InteiroParaRomano.intParaRomano(58));   // Saída: LVIII
+        System.out.println(RomanInteger.InteiroParaRomano.intParaRomano(1994)); // Saída: MCMXCIV
+}
 }
 
-}
+
